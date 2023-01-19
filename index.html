@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    
+  </style>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  
+</head>
+<body>
+
+<!-- <form>
+  <label for="file-input">Upload Image:</label>
+  <input type="file" id="file-input" name="file-input">
+  <br>
+  <input type="submit" value="Submit">
+</form> -->
+
+<div style="text-align: center;">
+<h1 style="color: red;">Image Filtration</h1>
+
+<form style="text-align: -webkit-center;">
+<input type="file" accept="image/*" id="imgUpload">
+<button type="button" id="uplButton">Upload</button>
+<img style="display:none; margin-top: 25px;" width="45%" id="colorizedID">
+<canvas id="colorizedID"></canvas>
+</form>
+
+
+<br>
+<br>
+<!-- <img src="../../../../image.jpg" id="colorizedID" class="colorized" width="45%"> -->
+<br>
+<br>
+<button class="button defaultBut" onclick="changeColorfun(id)" id="c1" >Default</button>
+<button class="button colorBut" onclick="changeColorfun(id)" id="c2" >Color</button>
+<button class="button blackBut" onclick="changeColorfun(id)" id="c3" >Black & White</button>
+<button class="button invertBut" onclick="changeColorfun(id)" id="c4" >Invert</button>
+<button class="button blurBut" onclick="changeColorfun(id)" id="c5" >Blur</button>
+
+<div style="margin-top: 15px;">
+    <button class="btn" id="downloadbtn"><i class="fa fa-download"></i> Download</button>
+</div>
+</div>
+
+
+
+<script src="javascript.js"></script>
+</body>
+
+</html>
