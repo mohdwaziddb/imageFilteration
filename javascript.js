@@ -37,10 +37,10 @@ button.addEventListener('click',function(){
     var downloadimage = document.getElementById('colorizedID');
     //console.log(downloadimage);
     var linkVar = document.createElement('a');
-    //linkVar.href = downloadimage.src;
+    linkVar.href = downloadimage.src;
     linkVar.download = 'new_image.jpg';
-    //linkVar.target = '_blank';
-    linkVar.href = downloadimage.toDataURL();
+    linkVar.target = '_blank';
+    //linkVar.href = downloadimage.toDataURL();
     linkVar.click();
     console.log(linkVar);
 });
